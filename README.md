@@ -36,21 +36,24 @@ Welcome to Stack Tracker, the app for exploring the technology landscape and tec
 <br>
 
 <p align="center">
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-countries-react-router-setup.gif" alt="Example - Finished LAB" />
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-intro.gif" alt="Example - Finished LAB" />
 </p>
+
 <br>
 
 ## Setup
 
 - Fork this repo
+
 - Clone this repo
+
 - Open the LAB and start:
 
-```bash
-cd lab-react-stack-tracker
-npm install
-npm run dev
-```
+  ```shell
+  cd lab-react-stack-tracker
+  npm install
+  npm run dev
+  ```
 
 <br>
 
@@ -68,9 +71,13 @@ npm run dev
 
 <br>
 
+<!--
+
 ## Test Your Code
 
 This lab is equipped with unit tests to provide automated feedback on your progress and help you understand whether your code is working as expected. If you want to check the tests, they are located in the `src/test` folder.
+
+
 
 ### Iterations and Test Results
 
@@ -91,6 +98,8 @@ npm run test
 3. To see the test results, **open** [http://127.0.0.1:51204/\_\_vitest\_\_](http://127.0.0.1:51204/__vitest__) in your browser.
 
 <br>
+
+-->
 
 ## Instructions
 
@@ -200,14 +209,20 @@ Create the following components in their respective folders:
 
 **`HomePage`**:
 
-![styled homepage component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-home-page-static.png)
+![styled homepage component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-homepage.png)
 
 <br>
 
-**`CompanyDetailsPage`**:
+**`CompanyPage`**:
 
-![styled country details page component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-country-details-page-static.png)
-<sub> Note: Structure and content copied from the "examples" folder</sub>
+![styled country details page component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-companypage.png)
+
+<br>
+
+**`TechnologyPage`**:
+
+![styled country details page component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-technologypage.png)
+
 <br>
 
 </details>
@@ -216,7 +231,7 @@ Create the following components in their respective folders:
 
 ---
 
-### Iteration 2 | Setup React Router and Create Routes
+### Iteration 3 | Setup React Router and Create Routes
 
 After creating the components, it is time to take the next step and set up React Router to handle navigation and create multiple pages in your app.
 
@@ -255,7 +270,7 @@ Once you set up the routes, your app should render two pages as shown in the exp
 
   <summary><b>See Expected Result</b></summary>
 
-![navigating to country details page from home page](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-countries-react-router-setup.gif)
+![navigating to company page and technology page](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-router-setup.gif)
 
   <br>
 
@@ -265,7 +280,7 @@ Once you set up the routes, your app should render two pages as shown in the exp
 
 ---
 
-### Iteration 3 | Display Companies as a List
+### Iteration 4 | Display Companies as a List
 
 In the `HomePage` component, render the list of companies.
 
@@ -285,7 +300,7 @@ To allow users to navigate to a specific company's details page, embed the compa
 
   <summary><b>See Expected Result</b></summary>
 
-![home page showing list of country names](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-countries-list-names-only.gif)
+![home page showing list of companies](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-list-companies.gif)
 
   <br>
 
@@ -295,7 +310,7 @@ To allow users to navigate to a specific company's details page, embed the compa
 
 ---
 
-### Iteration 4 | Show Company Details
+### Iteration 5 | Show Company Details
 
 In this iteration, you will work on the `CompanyPage` component to display the information of a specific company.
 
@@ -305,7 +320,7 @@ The component should take 1 prop:
 
 <br>
 
-#### 4.1 | Access URL Parameters
+#### 5.1 | Access URL Parameters
 
 When a company name link on the `HomePage` is clicked, the user should be navigated to the `CompanyPage`, and the company `slug` should be available as a URL parameter.
 
@@ -315,7 +330,7 @@ If you need a reminder on how to set up the useParams hook and access the URL pa
 
 <br>
 
-#### 4.2 | Show Company Details
+#### 5.2 | Show Company Details
 
 To retrieve the data for a specific company, you should iterate over the array of companies that is passed as a prop and find the company with a matching `slug` property.
 
@@ -327,7 +342,7 @@ Once you have the company data render the company _name_, _website_, _descriptio
 
   <summary><b>See Expected Result</b></summary>
 
-![dynamic country details page loading](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-country-details-page-dynamic-loading.gif)
+![company details page showing info](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-company-details-1.gif)
 
   <br>
 
@@ -335,7 +350,7 @@ Once you have the company data render the company _name_, _website_, _descriptio
 
 <br>
 
-#### 4.3 | Show Company's Tech Stack
+#### 5.3 | Show Company's Tech Stack
 
 Next, render the tech stack of the company as a list of links.
 
@@ -347,7 +362,7 @@ For each technology, display its `name` and `image`, and wrap them in a React Ro
 
   <summary><b>See Expected Result</b></summary>
 
-![dynamic country details page and borders](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-country-details-page-dynamic.gif)
+![company details page showing tech stack](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-company-details-2.gif)
 
   <br>
 
@@ -357,7 +372,7 @@ For each technology, display its `name` and `image`, and wrap them in a React Ro
 
 ---
 
-### Iteration 5 | Technology Details
+### Iteration 6 | Technology Details
 
 In this iteration, you will work on the `TechologyPage` component to display the information of a specific technology.
 
@@ -367,7 +382,7 @@ The component should take 1 prop:
 
 <br>
 
-#### 5.1 | Access URL Parameters
+#### 6.1 | Access URL Parameters
 
 When a technology link on the `CompanyPage` is clicked, the user should be navigated to the `TechologyPage`, and the technology `slug` (name) should be available as a URL parameter.
 
@@ -377,7 +392,7 @@ If you need a reminder on how to set up the useParams hook and access the URL pa
 
 <br>
 
-#### 5.2 | Show Technology Details
+#### 6.2 | Show Technology Details
 
 To retrieve the info of a specific technology, you should iterate over the array of technologies that is passed as a prop, and find the one with a matching `slug` property.
 
@@ -389,7 +404,7 @@ Once you have it, render the technology _name_, _image_, and _description_.
 
   <summary><b>See Expected Result</b></summary>
 
-![dynamic country details page loading](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-country-details-page-dynamic-loading.gif)
+![technology page showing details](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-tech-details-1.gif)
 
   <br>
 
@@ -397,11 +412,11 @@ Once you have it, render the technology _name_, _image_, and _description_.
 
 <br>
 
-#### 5.3 | Render the Back Button
+### Bonus: Iteration 7 | Back to Visited Company
 
-Next, render the tech stack of the company as a list of links.
+In this iteration, you should implement a back button in the `TechnologyPage` component that allows users to navigate back to the page of the company they visited previously. Here is how to do it:
 
-For each technology, display its `name` and `image`, and wrap them in a React Router `Link` component to make them clickable links. To allow users to navigate to a technology details page, embed the technology `slug` in the URL of the `Link`.
+When the user navigates from a `CompanyPage` to a `TechnologyPage`, include a [query string](https://www.techopedia.com/definition/1228/query-string) in the URL containing a `slug` (name) of the current company. Next, on the `TechnologyPage`, retrieve the query string using `useSearchParams()` and create a **<kbd>Back</kbd>** button that navigates the user back to the `CompanyPage` of the last visited company.
 
 <br>
 
@@ -409,7 +424,7 @@ For each technology, display its `name` and `image`, and wrap them in a React Ro
 
   <summary><b>See Expected Result</b></summary>
 
-![dynamic country details page and borders](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-wikicountries/lab-react-wiki-countries-country-details-page-dynamic.gif)
+![technology page showing details](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/lab-react-stack-tracker-tech-details-back.gif)
 
   <br>
 
@@ -417,23 +432,7 @@ For each technology, display its `name` and `image`, and wrap them in a React Ro
 
 <br>
 
-
-
-### Bonus: Iteration 6 | Back to Visited Company
-
-Create a button that in the `TechnologyPage` component that when clicked, navigates the user back to the page of the last visited company.
-
-
-
-When navigating from a `CompanyPage` to a `TechnologyPage`, include a query string in the URL named with a slug of the current company. 
-
-Next, on the `TechnologyPage`, retrieve the slug from the query string using `useSearchParams()` and create a **<kbd>Back</kbd>** button. This back button, when clicked, should navigate the user back to the `CompanyPage` of the last visited company using the route `/company/:companySlug`.
-
-<br>
-
-
-
-### Bonus: Iteration 7 | Styling
+### Bonus: Iteration 8 | Styling
 
 Now that your application is fully functional, it could use a bit of aesthetic touch. This is your chance to get creative, start adding some styles to make your app "pop"!
 
@@ -465,41 +464,66 @@ Once you have a clear understanding of the problem, you will be able to start wo
 <br>
 
 <details>
-  <summary>How do I update a state variable in my React component? How do I use the useState hook in my React component?</summary>
+  <summary>How do you set up the React Router in a React app?</summary>
 
   <br>
 
-To update a state variable in a React component, you should use the `useState` hook. This hook returns an array with two elements: the **current value** of the state variable and a **function to update it**. Here is an example of how to use `useState` to update the `count` state variable:
+To set up the React Router in your React application, follow these steps:
+
+1. Install React Router package by running the following command from the root folder:
+
+```bash
+npm install react-router-dom
+```
+
+2. Import the `BrowserRouter` component in your app's entry point (usually `index.js`) and wrap your `<App />` component with it:
 
 ```jsx
-import { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
-function MyComponent() {
-  const [count, setCount] = useState(0);
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById("root")
+);
+```
 
-  const handleClick = () => {
-    setCount(count + 1);
-  };
+3. Import the components `Routes` and `Route` in `App.js`:
 
+```jsx
+import { Routes, Route } from "react-router-dom";
+```
+
+4. Define the routes (pages) in your app using the components `Routes` and `Route` component:
+
+```jsx
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+
+function App() {
   return (
-    <div>
-      <button onClick={handleClick}> Increment </button>
-      <p>Count: {count}</p>
+    <div className="App">
+      {/* Add <Route /> components between <Routes> </Routes>   */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </div>
   );
 }
+
+export default App;
 ```
 
-In the above example, the `handleClick` function is called when the button is clicked, and it updates the `count` state variable by calling the `setCount` function with the new value: `setCount(count + 1)`.
-The component will re-render every time a state variable gets updated.
-
-  <br>
+   <br>
 
 [Back to top](#faqs)
 
 </details>
 
-<br>
+  <br>
 
 <details>
   <summary>I am getting an error: "not defined". How do I fix it?</summary>
