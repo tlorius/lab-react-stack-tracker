@@ -168,7 +168,7 @@ The data that you will use in this exercise is located in the files `src/compani
 
 In this iteration, we will do the initial setup and use the state to store the data that we will use in the app.
 
-In the `App` component, import the json datasets from the files `src/companies.json` and `src/technologies.json` and save them in the state as separate variables.
+In the `App` component, import the json datasets from the files `src/companies.json` and `src/technologies.json` and save them in the state as separate state variables.
 
 ---
 
@@ -178,26 +178,35 @@ Inside the `src` folder, we have two separate folders named `components` and `pa
 
 Create the following components in their respective folders:
 
-**Components Folder:**
+<br>
 
-- **`src/components/Navbar.jsx`**: The `Navbar` component should display a `nav` element with the text **"StackTracker"**.
+**Components Folder - `src/components`**
+
+
+- `Navbar` component:
+  - File: `src/components/Navbar.jsx`:  
+  - Should display a `nav` element with the text: **"StackTracker"**.
 
 <br>
 
-**Pages Folder:**
+**Pages Folder - `src/pages`**
 
-- **`src/pages/HomePage.jsx`**: The `HomePage` component should display a headline with the text:
+- `HomePage` component:
+  - File: `src/pages/HomePage.jsx`:  
+  - Should display a headline with the text: **"StackTracker: Discover Tech Stacks Used by Top Companies"**
 
-  **"StackTracker: Discover Tech Stacks Used by Top Companies"**
   <br>
 
-- **`src/pages/CompanyPage.jsx`**: The `CompanyPage` component should display a headline with the text:
+- `CompanyPage` component:
+  - File: `src/pages/CompanyPage.jsx`:  
+  - Should display a headline with the text: **"Company Profile**"
 
-  **"Company Profile**"
+  <br>
 
-- **`src/pages/TechnologyPage.jsx`**: The `TechnologyPage.jsx` component should display a headline with the text:
 
-  **"Technology Details**"
+- `TechnologyPage` component:
+  - File: `src/pages/TechnologyPage.jsx`:  
+  - Should display a headline with the text: **"Technology Details**"
 
 <br>
 
