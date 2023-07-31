@@ -381,9 +381,9 @@ For each technology, display its `name` and `image`, and wrap them in a React Ro
 
 ---
 
-### Iteration 6 | Technology Details
+### Bonus: Iteration 6 | Technology Details
 
-In this iteration, you will work on the `TechologyPage` component to display the information of a specific technology.
+In this iteration, you will work on the `TechologyPage` component to display information about a specific technology.
 
 The component should take 1 prop:
 
