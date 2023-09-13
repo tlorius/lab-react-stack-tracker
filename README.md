@@ -485,16 +485,19 @@ To set up the React Router in your React application, follow these steps:
 npm install react-router-dom
 ```
 
-2. Import the `BrowserRouter` component in your app's entry point (usually `index.js`) and wrap your `<App />` component with it:
+2. Import the `BrowserRouter` component in your app's entry point (usually `main.jsx`) and wrap your `<App />` component with it:
 
 ```jsx
 import { BrowserRouter as Router } from "react-router-dom";
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <React.StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
 );
 ```
 
